@@ -1,0 +1,32 @@
+train:
+  output_dir: /path/to/your/output/directory
+  model_dir: /path/to/your/model/directory
+  log_dir: /path/to/your/log/directory
+  tiles_dir: /path/to/your/tiles/directory
+  batch_size: 32
+  iou_threshold: 0.5
+  data_path: /path/to/your/training/data
+  labels_path: /path/to/your/labels/file
+  num_epochs: 100
+  data_shuffle: false
+  use_4chn: true 
+  read_from_files: true #read from files vs creating on-the-fly
+  lr: 0.0001
+  lr_scheduler: false
+  use_tiles: true # Use tiles vs full frames (keep true)
+  create_tiles: false # Create tiles for firs time run (keep false if not first time run)
+
+detect:
+  output_dir: /path/to/your/output/directory
+  model_dir: /path/to/your/model/directory
+  log_dir: /path/to/your/log/directory
+  tiles_dir: /path/to/your/tiles/directory
+  batch_size: 32
+  model_names: [model1, model2]
+  burn_results: /path/to/your/burned/results # Directory to save burned images
+  burn_results: /path/to/your/burned/results
+  use_tiles: true
+  data_shuffle: false
+  read_from_files: true
+  create_tiles: true
+  use_4chn: true

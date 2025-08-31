@@ -1,0 +1,34 @@
+train:
+  output_dir: runs_test
+  model_dir: models_test
+  log_dir: logs_test
+  tiles_dir: /Users/a.e./Dropbox/ndsu_birds/frcnn/tiles_test
+  batch_size: 8
+  data_path: ../data
+  labels_path: /Users/a.e./Dropbox/ndsu_birds/data/original_annotations
+  iou_threshold: 0.5
+  num_epochs: 100
+  data_shuffle: false
+  use_4chn: true
+  read_from_files: true
+  lr: 0.0001
+  lr_scheduler: false
+  use_tiles: true
+  create_tiles: true
+
+
+detect:
+  output_dir: runs_test
+  model_dir: models_test
+  log_dir: logs_test
+  tiles_dir: tiles_test/Users/a.e./Dropbox/ndsu_birds/frcnn/tiles_test
+  batch_size: 8
+  data_path: ../data
+  labels_path: /Users/a.e./Dropbox/ndsu_birds/frcnn/data/original_annotations
+  models_names: [chkpnt_00-14-31-08-25.pth,]
+  burn_results: burn_results_test
+  use_tiles: true
+  data_shuffle: false
+  read_from_files: true
+  create_tiles: true
+  use_4chn: true
