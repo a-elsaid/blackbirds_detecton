@@ -5,6 +5,21 @@ It provides training and inference (`detect`) commands for bird datasets with XM
 
 ---
 
+<!-- Top row: two images side by side -->
+<p align="center">
+  <img src="docs/images/tiling.pdf" alt="Tiling" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="docs/images/birds_species.pdf" alt="species" width="60%"/>
+</p>
+
+<p align="center">
+  <img src="docs/images/bg_removal.png" alt="bg_removal" width="60%"/>
+</p>
+
+---
+
 ## 📂 Project Structure
 
 ```
@@ -250,13 +265,38 @@ tree outputs/ -L 3
 
 ---
 
-## 📖 Reference
+## 🔬 Scientific Background
 
-This repository accompanies the research described in the following paper:
+This project implements the methods from the following study:
 
-**Duttenhefner, Jessica**, **ElSaid, AbdElRahman A.**, & **Klug, Page E.** (2025). *Machine Learning to Detect, Classify, and Count Blackbirds Damaging Agriculture Using Drone-Based Imagery: Supporting AI-Driven Automation for Deployment of Damage Management Tools*. SSRN Scholarly Paper, ID 5203080. [Available online](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5203080).
+**Duttenhefner, Jessica L.; ElSaid, AbdElRahman A.; and Klug, Page E. (2025).**
+*Machine Learning to Detect, Classify, and Count Blackbirds Damaging Agriculture Using Drone-Based Imagery: Supporting AI-Driven Automation for Deployment of Damage Management Tools.*
+SSRN Scholarly Paper No. 5203080. [Available online](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5203080)
 
-The code in this repository implements the methods and experiments detailed in the paper, allowing users to reproduce results, extend the models, and apply them to related datasets. If you use this work in your own research, please cite the paper.
+📊 **Associated Data**: A published dataset accompanies the paper. Please add the DOI link here once available:
+`[DOI: 10.xxxx/zenodo.xxxxx]`
+
+---
+
+### 📝 Key Highlights from the Study
+- Drone imagery collected in **sunflower fields (ND, 2021–2022)** with mixed-species blackbird flocks.
+- Models developed:
+  - **ResNet-18 CNN** → detected whole flocks (*95% accuracy*).
+  - **Faster-RCNN** → detected individual birds (*65.7% accuracy, 97.6% precision*), counted individuals (±37.5–43.1% from ground truth), and classified RWBL by age/sex (adult males 89.8%, hatch-year males 27.6%, females 80%).
+- **Background removal** was applied prior to training using **pixel-value histograms** to mask dominant background colors (e.g., sky, vegetation), improving detection and reducing false positives.
+- Challenges discussed: camouflage of birds against vegetation, variability in drone angles, and image resolution constraints.
+
+---
+
+### 🖼️ Suggested Figures for README
+You can copy or adapt from the paper (with attribution):
+1. **Sample drone image with bounding boxes** — to illustrate detection output.
+2. **Diagram of the pipeline** — showing preprocessing (background removal), model training, and detection steps.
+
+*(Place them in `/docs/images/` and reference with Markdown:)*
+```markdown
+![Example detection output](docs/images/sample_detection.jpg)
+*Figure: Drone-based detection of blackbirds with bounding boxes.*
 
 ---
 
