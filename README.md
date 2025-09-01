@@ -252,11 +252,11 @@ tree outputs/ -L 3
 
 ## 📖 Reference
 
-This repository accompanies the research described in the paper:
+This repository accompanies the research described in the following paper:
 
-[**Ahmed ElSaid, "Automated Blackbird Detection Using Computer Vision and Deep Learning" (2025)**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5203080).
+**Duttenhefner, Jessica**, **ElSaid, AbdElRahman A.**, & **Klug, Page E.** (2025). *Machine Learning to Detect, Classify, and Count Blackbirds Damaging Agriculture Using Drone-Based Imagery: Supporting AI-Driven Automation for Deployment of Damage Management Tools*. SSRN Scholarly Paper, ID 5203080. [Available online](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5203080).
 
-The code provided here implements the methods and experiments discussed in the paper, enabling reproduction of results, extension of the models, and application to related datasets. If you use this code in your own work, please cite the paper accordingly.
+The code in this repository implements the methods and experiments detailed in the paper, allowing users to reproduce results, extend the models, and apply them to related datasets. If you use this work in your own research, please cite the paper.
 
 ---
 
