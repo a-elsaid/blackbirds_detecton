@@ -250,6 +250,16 @@ tree outputs/ -L 3
 
 ---
 
+## 📖 Reference
+
+This repository accompanies the research described in the paper:
+
+[**Ahmed ElSaid, "Automated Blackbird Detection Using Computer Vision and Deep Learning" (2025)**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5203080).
+
+The code provided here implements the methods and experiments discussed in the paper, enabling reproduction of results, extension of the models, and application to related datasets. If you use this code in your own work, please cite the paper accordingly.
+
+---
+
 ## 📜 License
 
 MIT (or update to your license)
