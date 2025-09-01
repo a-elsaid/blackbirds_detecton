@@ -288,13 +288,6 @@ SSRN Scholarly Paper No. 5203080. [Available online](https://papers.ssrn.com/sol
 
 ---
 
-### 🖼️ Suggested Figures for README
-You can copy or adapt from the paper (with attribution):
-1. **Sample drone image with bounding boxes** — to illustrate detection output.
-2. **Diagram of the pipeline** — showing preprocessing (background removal), model training, and detection steps.
-
----
-
 ## 📜 License
 
 MIT (or update to your license)
