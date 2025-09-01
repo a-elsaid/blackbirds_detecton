@@ -11,7 +11,7 @@ It provides training and inference (`detect`) commands for bird datasets with XM
 </p>
 
 <p align="center">
-  <img src="docs/images/birds_species.png" alt="species" width="60%"/>
+  <img src="docs/images/species.png" alt="species" width="60%"/>
 </p>
 
 <p align="center">
