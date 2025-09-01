@@ -293,11 +293,6 @@ You can copy or adapt from the paper (with attribution):
 1. **Sample drone image with bounding boxes** — to illustrate detection output.
 2. **Diagram of the pipeline** — showing preprocessing (background removal), model training, and detection steps.
 
-*(Place them in `/docs/images/` and reference with Markdown:)*
-```markdown
-![Example detection output](docs/images/sample_detection.jpg)
-*Figure: Drone-based detection of blackbirds with bounding boxes.*
-
 ---
 
 ## 📜 License
