@@ -290,4 +290,4 @@ SSRN Scholarly Paper No. 5203080. [Available online](https://papers.ssrn.com/sol
 
 ## 📜 License
 
-MIT (or update to your license)
+MIT
